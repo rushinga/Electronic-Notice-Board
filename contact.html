@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronic Notice Board Management Information System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="navibar">
+      <div class="logo">
+        <h1>Notice Board System</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+          <!-- <li><a href="archives.html">Archives</a></li> -->
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+          <p>
+            We are here to provide you with up-to-date announcements and
+            important information. If you have any questions or need further
+            assistance, please feel free to reach out to us through the contact
+            form below or use the provided contact details.
+          </p>
+          <p><strong>Email:</strong> cedricashimwe@noticesystem.com</p>
+          <p><strong>Phone:</strong> +250 78 690 044</p>
+          <p><strong>Address:</strong> KG 234 Street, Kigali, Rwanda</p>
+        </div>
+
+        <form class="contact-form" action="contactus.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <h4>&copy; 2024 Electronic Notice Board Portal. All rights reserved.</h4>
+    </footer>
+  </body>
+</html>

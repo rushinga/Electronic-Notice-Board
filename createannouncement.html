@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronic Notice Board Management Information System</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="normalize.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="navibar">
+      <div class="logo">
+        <h1>Notice Board System</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+          <!-- <li><a href="archives.html">Archives</a></li> -->
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="contact-section">
+        <h2 style="margin-top: 100px">Create Announcement</h2>
+
+        <div class="create-announcement">
+          <form action="announcements.php" method="post">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required />
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required />
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+              <option value="Academic">Academic</option>
+              <option value="Events">Events</option>
+              <option value="General">General</option>
+            </select>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <label for="poster-name">Your Name:</label>
+            <input type="text" id="poster-name" name="poster-name" required />
+            <label for="poster-email">Your Email:</label>
+            <input type="text" id="poster-email" name="poster-email" required />
+            <button type="submit">Post Announcement</button>
+            <a href="announcements.html" class="intro-btn">Back</a>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h4>&copy; 2024 Electronic Notice Board Portal. All rights reserved.</h4>
+    </footer>
+  </body>
+</html>

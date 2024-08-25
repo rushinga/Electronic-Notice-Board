@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronic Notice Board Management Information System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="navibar">
+      <div class="logo">
+        <h1>Notice Board System</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+          <!-- <li><a href="archives.html">Archives</a></li> -->
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="contact-section">
+        <h2>View Your Announcements</h2>
+        <p>
+          Enter your email address below to view your posted announcements. You
+          will receive a list of announcements associated with your email.
+        </p>
+
+        <!-- Form for viewing announcements by email -->
+        <form
+          class="view-announcements-form"
+          action="viewannouncement.php"
+          method="post"
+        >
+          <label for="user-email">Email:</label>
+          <input
+            type="email"
+            id="user-email"
+            name="user-email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <button type="submit">View Announcements</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h4>&copy; 2024 Electronic Notice Board Portal. All rights reserved.</h4>
+      <p>Providing a digital platform for announcements and notices.</p>
+    </footer>
+  </body>
+</html>
